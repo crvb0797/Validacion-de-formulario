@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #f2f2f2;
+}
+
+.content {
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content header {
+  padding-top: 5px;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.content form {
+  margin: 20px 27px;
+}
+
+.content form .sphere {
+  width: 100%;
+  position: relative;
+  height: 45px;
+  display: flex;
+}
+
+form .sphere input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  outline: none;
+}
+
+form .sphere .icons {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sphere .icons span {
+  height: 25px;
+  width: 25px;
+  border: 2px solid;
+  border-radius: 50%;
+  line-height: 25px;
+  display: none;
+}
+
+.sphere .icons span.icon1 {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.sphere .icons span.icon2 {
+  color: #27ae60;
+  border-color: #27ae60;
+}
+
+form .error-text {
+  position: relative;
+  margin: 15px 0 -5px 0;
+  background: #e74c3e;
+  color: #fceae8;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  display: none;
+}
+
+form .error-text::before {
+  position: absolute;
+  content: " ";
+  height: 15px;
+  width: 15px;
+  background: #e74c3e;
+  right: 20px;
+  top: -7px;
+  transform: rotate(45deg);
+}
+
+form button {
+  margin-top: 10px;
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #27ae60;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: none;
+}
